@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
-  increment,
-  incrementAsync,
-  selectCount,
-} from '../productListSlice';
+  fetchAllProductsAsync,
+  fetchProductsByFiltersAsync,
+  selectAllProducts,
+} from '../productSlice';
 import {
   Dialog,
   DialogBackdrop,
@@ -17,54 +17,49 @@ import {
   MenuItem,
   MenuItems,
 } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
+import { StarIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
 import { Link } from 'react-router-dom';
 
 const sortOptions = [
-  { name: 'Most Popular', href: '#', current: true },
-  { name: 'Best Rating', href: '#', current: false },
-  { name: 'Newest', href: '#', current: false },
-  { name: 'Price: Low to High', href: '#', current: false },
-  { name: 'Price: High to Low', href: '#', current: false },
+  { name: 'Best Rating', sort: 'rating', order:"desc", current: false },
+  { name: 'Price: Low to High', sort: 'price', order:"asc", current: false },
+  { name: 'Price: High to Low', sort: 'price', order:"desc",current: false },
 ]
 
 const filters = [
-  {
-    id: 'color',
-    name: 'Color',
-    options: [
-      { value: 'white', label: 'White', checked: false },
-      { value: 'beige', label: 'Beige', checked: false },
-      { value: 'blue', label: 'Blue', checked: true },
-      { value: 'brown', label: 'Brown', checked: false },
-      { value: 'green', label: 'Green', checked: false },
-      { value: 'purple', label: 'Purple', checked: false },
-    ],
-  },
   {
     id: 'category',
     name: 'Category',
     options: [
       { value: 'new-arrivals', label: 'New Arrivals', checked: false },
-      { value: 'sale', label: 'Sale', checked: false },
-      { value: 'travel', label: 'Travel', checked: true },
-      { value: 'organization', label: 'Organization', checked: false },
-      { value: 'accessories', label: 'Accessories', checked: false },
+      { value: 'furniture', label: 'Furniture', checked: false },
+      { value: 'beauty', label: 'Beauty', checked: false },
+      { value: 'fragrances', label: 'Fragrances', checked: false },
+      { value: 'groceries', label: 'Groceries', checked: false },
     ],
   },
   {
-    id: 'size',
-    name: 'Size',
+    id: 'brand',
+    name: 'Brand',
     options: [
-      { value: '2l', label: '2L', checked: false },
-      { value: '6l', label: '6L', checked: false },
-      { value: '12l', label: '12L', checked: false },
-      { value: '18l', label: '18L', checked: false },
-      { value: '20l', label: '20L', checked: false },
-      { value: '40l', label: '40L', checked: true },
+      { value: 'essence', label: 'Essence', checked: false },
+    { value: 'glamour-beauty', label: 'Glamour Beauty', checked: false },
+    { value: 'velvet-touch', label: 'Velvet Touch', checked: false },
+    { value: 'chic-cosmetics', label: 'Chic Cosmetics', checked: false },
+    { value: 'nail-couture', label: 'Nail Couture', checked: false },
+    { value: 'calvin-klein', label: 'Calvin Klein', checked: false },
+    { value: 'chanel', label: 'Chanel', checked: false },
+    { value: 'Dior', label: 'Dior', checked: false },
+    { value: 'dolce-&-gabbana', label: 'Dolce & Gabbana', checked: false },
+    { value: 'gucci', label: 'Gucci', checked: false },
+    { value: 'annibale-colombo', label: 'Annibale Colombo', checked: false },
+    { value: 'furniture-co.', label: 'Furniture Co.', checked: false },
+    { value: 'knoll', label: 'Knoll', checked: false },
+    { value: 'bath-trends', label: 'Bath Trends', checked: false }
     ],
-  },
+  }
+  
 ]
 
 const items = [
@@ -79,49 +74,71 @@ function classNames(...classes) {
 }
 
 export function ProductList() {
-  const count = useSelector(selectCount);
   const dispatch = useDispatch();
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
+  const products = useSelector(selectAllProducts);
+  const [filter,setFilter] = useState({});
 
-  const products = [
+  const handleFilter = (e,section,option)=>{
+    const newFilter = {...filter,[section.id]:option.value};
+    setFilter(newFilter)
+    dispatch(fetchProductsByFiltersAsync(newFilter))
+  }
+
+  const handleSort = (e,option)=>{
+    const newFilter = {...filter,_sort:option.sort,_order:option.order};
+    setFilter(newFilter)
+    dispatch(fetchProductsByFiltersAsync(newFilter))
+  }
+
+  useEffect(()=>{
+    dispatch(fetchAllProductsAsync())
+  },[dispatch])
+
+  const oldproducts = [
     {
       id: 1,
-      name: 'Basic Tee',
+      title: 'Basic Tee',
       href: '#',
-      imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      thumbnail: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
       imageAlt: "Front of men's Basic Tee in black.",
       price: '$35',
       color: 'Black',
     },
     {
       id: 2,
-      name: 'Basic Tee',
+      title: 'Basic Tee',
       href: '#',
-      imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      thumbnail: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
       imageAlt: "Front of men's Basic Tee in black.",
       price: '$35',
       color: 'Black',
     },
     {
       id: 3,
-      name: 'Basic Tee',
+      title: 'Basic Tee',
       href: '#',
-      imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      thumbnail: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
       imageAlt: "Front of men's Basic Tee in black.",
       price: '$35',
       color: 'Black',
     },
     // {
     //   id: 4,
-    //   name: 'Basic Tee',
+    //   title: 'Basic Tee',
     //   href: '#',
-    //   imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    //   thumbnail: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
     //   imageAlt: "Front of men's Basic Tee in black.",
     //   price: '$35',
     //   color: 'Black',
     // },
     // More products...
   ]
+
+
+ 
+
+
 
   return (
     <div>
@@ -243,10 +260,10 @@ export function ProductList() {
                         {sortOptions.map((option) => (
                           <MenuItem key={option.name}>
                             <a
-                              href={option.href}
+                              onClick={e=>handleSort(e,option)}
                               className={classNames(
-                                option.current ? 'font-medium text-gray-900' : 'text-gray-500',
-                                'block px-4 py-2 text-sm data-focus:bg-gray-100 data-focus:outline-hidden',
+                                option.current ? ' font-medium text-gray-900' : 'text-gray-500',
+                                'block px-4 py-2 cursor-pointer text-sm data-focus:bg-gray-100 data-focus:outline-hidden',
                               )}
                             >
                               {option.name}
@@ -305,6 +322,7 @@ export function ProductList() {
                                       id={`filter-${section.id}-${optionIdx}`}
                                       name={`${section.id}[]`}
                                       type="checkbox"
+                                      onChange={e=>handleFilter(e,section,option)}
                                       className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                                     />
                                     <svg
@@ -347,25 +365,38 @@ export function ProductList() {
                         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                           {products.map((product) => (
                             <Link to="/product-detail">
-                            <div key={product.id} className="group relative">
-                              <img
-                                alt={product.imageAlt}
-                                src={product.imageSrc}
-                                className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
-                              />
-                              <div className="mt-4 flex justify-between">
-                                <div>
-                                  <h3 className="text-sm text-gray-700">
-                                    <a href={product.href}>
-                                      <span aria-hidden="true" className="absolute inset-0" />
-                                      {product.name}
-                                    </a>
-                                  </h3>
-                                  <p className="mt-1 text-sm text-gray-500">{product.color}</p>
+                              <div key={product.id} className="group relative p-2 border-solid border-2 border-gray-300">
+                                <img
+                                  alt={product.imageAlt}
+                                  src={product.thumbnail}
+                                  className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-60"
+                                />
+                                <div className="mt-4 flex justify-between">
+                                  <div>
+                                    <h3 className="text-sm text-gray-700">
+                                      <div href={product.href}>
+                                        <span aria-hidden="true" className="absolute inset-0" />
+                                        {product.title}
+                                      </div>
+
+                                    </h3>
+                                    <p className="mt-1 text-sm text-gray-500">
+                                      <StarIcon className='w-6 h-6 inline'></StarIcon>
+                                      <span className='align-bottom'>{product.rating}</span>
+                                    </p>
+                                  </div>
+                                  <div>
+                                    <span className="block text-sm text-left font-medium text-gray-900">
+                                      ${Math.round(
+                                        product.price * (1 - product.discountPercentage / 100)
+                                      )}
+                                    </span>
+                                    <span className="block mr-0 text-sm line-through text-left font-medium text-gray-400">
+                                      ${product.price}
+                                    </span>
+                                  </div>
                                 </div>
-                                <p className="text-sm font-medium text-gray-900">{product.price}</p>
                               </div>
-                            </div>
                             </Link>
                           ))}
                         </div>
