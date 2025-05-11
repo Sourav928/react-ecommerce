@@ -4,7 +4,7 @@ import {
   increment,
   incrementAsync,
   selectCount,
-} from './productListSlice';
+} from '../productListSlice';
 import {
   Dialog,
   DialogBackdrop,
@@ -19,6 +19,7 @@ import {
 } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
+import { Link } from 'react-router-dom';
 
 const sortOptions = [
   { name: 'Most Popular', href: '#', current: true },
@@ -345,6 +346,7 @@ export function ProductList() {
                       <div className="mx-auto max-w-2xl px-4 py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
                         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                           {products.map((product) => (
+                            <Link to="/product-detail">
                             <div key={product.id} className="group relative">
                               <img
                                 alt={product.imageAlt}
@@ -364,6 +366,7 @@ export function ProductList() {
                                 <p className="text-sm font-medium text-gray-900">{product.price}</p>
                               </div>
                             </div>
+                            </Link>
                           ))}
                         </div>
                       </div>
