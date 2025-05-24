@@ -2,8 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   fetchAllProductsAsync,
+  fetchBrandsAsync,
+  fetchCategoriesAsync,
   fetchProductsByFiltersAsync,
   selectAllProducts,
+  selectBrands,
+  selectCategories,
   selectTotalItems,
 } from '../productSlice';
 import {
@@ -29,41 +33,6 @@ const sortOptions = [
   { name: 'Price: High to Low', sort: 'price', order: "desc", current: false },
 ]
 
-const filters = [
-  {
-    id: 'category',
-    name: 'Category',
-    options: [
-      { value: 'new-arrivals', label: 'New Arrivals', checked: false },
-      { value: 'furniture', label: 'Furniture', checked: false },
-      { value: 'beauty', label: 'Beauty', checked: false },
-      { value: 'fragrances', label: 'Fragrances', checked: false },
-      { value: 'groceries', label: 'Groceries', checked: false },
-    ],
-  },
-  {
-    id: 'brand',
-    name: 'Brand',
-    options: [
-      { value: 'essence', label: 'Essence', checked: false },
-      { value: 'glamour-beauty', label: 'Glamour Beauty', checked: false },
-      { value: 'velvet-touch', label: 'Velvet Touch', checked: false },
-      { value: 'chic-cosmetics', label: 'Chic Cosmetics', checked: false },
-      { value: 'nail-couture', label: 'Nail Couture', checked: false },
-      { value: 'calvin-klein', label: 'Calvin Klein', checked: false },
-      { value: 'chanel', label: 'Chanel', checked: false },
-      { value: 'Dior', label: 'Dior', checked: false },
-      { value: 'dolce-&-gabbana', label: 'Dolce & Gabbana', checked: false },
-      { value: 'gucci', label: 'Gucci', checked: false },
-      { value: 'annibale-colombo', label: 'Annibale Colombo', checked: false },
-      { value: 'furniture-co.', label: 'Furniture Co.', checked: false },
-      { value: 'knoll', label: 'Knoll', checked: false },
-      { value: 'bath-trends', label: 'Bath Trends', checked: false }
-    ],
-  }
-
-]
-
 const items = [
   { id: 1, title: 'Back End Developer', department: 'Engineering', type: 'Full-time', location: 'Remote' },
   { id: 2, title: 'Front End Developer', department: 'Engineering', type: 'Full-time', location: 'Remote' },
@@ -79,6 +48,21 @@ export function ProductList() {
   const dispatch = useDispatch();
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
   const products = useSelector(selectAllProducts);
+  const categories = useSelector(selectCategories);
+  const brands = useSelector(selectBrands);
+  console.log(categories)
+  const filters = [
+    {
+      id: 'category',
+      name: 'Category',
+      options: categories
+    },
+    {
+      id: 'brand',
+      name: 'Brand',
+      options: brands
+    }
+  ]
   const totalItems = useSelector(selectTotalItems);
   const [filter, setFilter] = useState({});
   const [sort, setSort] = useState({});
@@ -117,9 +101,14 @@ export function ProductList() {
     dispatch(fetchProductsByFiltersAsync({ filter, sort, pagination }))
   }, [dispatch, filter, sort, page])
 
-  useEffect(()=>{
+  useEffect(() => {
     setPage(1);
-  },[totalItems,sort])
+  }, [totalItems, sort])
+
+  useEffect(()=>{
+    dispatch(fetchBrandsAsync());
+    dispatch(fetchCategoriesAsync());
+  },[]);
 
   const oldproducts = [
     {
@@ -172,7 +161,7 @@ export function ProductList() {
         <div className="bg-white">
           <div>
             {/* Mobile filter dialog */}
-            <MobileFilter handleFilter={handleFilter} mobileFiltersOpen={mobileFiltersOpen} setMobileFiltersOpen={setMobileFiltersOpen} />
+            <MobileFilter handleFilter={handleFilter} mobileFiltersOpen={mobileFiltersOpen} setMobileFiltersOpen={setMobileFiltersOpen} filters={filters} />
 
             <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex items-baseline justify-between border-b border-gray-200 pt-24 pb-6">
@@ -234,7 +223,7 @@ export function ProductList() {
 
                 <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
                   {/* Filters */}
-                  <DesktopFilter handleFilter={handleFilter} />
+                  <DesktopFilter handleFilter={handleFilter} filters={filters}/>
 
                   {/* Product grid */}
                   <ProductGrid products={products} />
@@ -251,7 +240,7 @@ export function ProductList() {
   );
 }
 
-function MobileFilter({ handleFilter, mobileFiltersOpen, setMobileFiltersOpen }) {
+function MobileFilter({ handleFilter, mobileFiltersOpen, setMobileFiltersOpen,filters }) {
 
   return (
     <>
@@ -348,7 +337,7 @@ function MobileFilter({ handleFilter, mobileFiltersOpen, setMobileFiltersOpen })
   )
 }
 
-function DesktopFilter({ handleFilter }) {
+function DesktopFilter({ handleFilter,filters }) {
   return (
     <>
       <form className="hidden lg:block">
@@ -458,7 +447,7 @@ function ProductGrid({ products }) {
                     </div>
                   </div>
                 </Link>
-              )) : <span>NO DATA</span> }
+              )) : <span>NO DATA</span>}
             </div>
           </div>
         </div>
@@ -468,41 +457,42 @@ function ProductGrid({ products }) {
 }
 
 function Pagination({ page, setPage, handlePage, totalItems }) {
+  const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE); 
   return (
     <>
       <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
         <div className="flex flex-1 justify-between sm:hidden">
-          <a
-            href="#"
+          <div
+            onClick={(e) => handlePage(page > 1 ? page - 1 : page)}
             className="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
           >
             Previous
-          </a>
-          <a
-            href="#"
+          </div>
+          <div
+            onClick={(e) => handlePage(page < totalPages ? page + 1 : page)}
             className="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
           >
             Next
-          </a>
+          </div>
         </div>
         <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
           <div>
             <p className="text-sm text-gray-700">
-              Showing <span className="font-medium">{(page - 1) * ITEMS_PER_PAGE + 1}</span> to <span className="font-medium">{page*ITEMS_PER_PAGE > totalItems ? totalItems:page*ITEMS_PER_PAGE}</span> of{' '}
+              Showing <span className="font-medium">{(page - 1) * ITEMS_PER_PAGE + 1}</span> to <span className="font-medium">{page * ITEMS_PER_PAGE > totalItems ? totalItems : page * ITEMS_PER_PAGE}</span> of{' '}
               <span className="font-medium">{totalItems}</span> results
             </p>
           </div>
           <div>
             <nav aria-label="Pagination" className="isolate inline-flex -space-x-px rounded-md shadow-xs">
-              <a
-                href="#"
+              <div
+                onClick={(e) => handlePage(page > 1 ? page - 1 : page)}
                 className="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
               >
                 <span className="sr-only">Previous</span>
                 <ChevronLeftIcon aria-hidden="true" className="size-5" />
-              </a>
+              </div>
               {/* Current: "z-10 bg-indigo-600 text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" */}
-              {Array.from({ length:Math.ceil(totalItems/ITEMS_PER_PAGE) }).map((el, index) => (
+              {Array.from({ length: totalPages }).map((el, index) => (
                 <div
                   onClick={(e) => handlePage(index + 1)}
                   aria-current="page"
@@ -516,6 +506,7 @@ function Pagination({ page, setPage, handlePage, totalItems }) {
 
               }
               <div
+                onClick={(e) => handlePage(page < totalPages ? page + 1 : page)}
                 className="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
               >
                 <span className="sr-only">Next</span>
