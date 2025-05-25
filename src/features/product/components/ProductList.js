@@ -50,7 +50,7 @@ export function ProductList() {
   const products = useSelector(selectAllProducts);
   const categories = useSelector(selectCategories);
   const brands = useSelector(selectBrands);
-  console.log(categories)
+
   const filters = [
     {
       id: 'category',
@@ -69,7 +69,7 @@ export function ProductList() {
   const [page, setPage] = useState(1);
 
   const handleFilter = (e, section, option) => {
-    console.log(e.target.checked);
+    // console.log(e.target.checked);
     const newFilter = { ...filter };
     //TODO: on server we will support multiple categories
     if (e.target.checked) {
@@ -82,13 +82,13 @@ export function ProductList() {
       const index = newFilter[section.id].findIndex(el => el === option.value);
       newFilter[section.id].splice(index, 1);
     }
-    console.log({ newFilter });
+    // console.log({ newFilter });
     setFilter(newFilter)
   }
 
   const handleSort = (e, option) => {
     const sort = { _sort: option.sort, _order: option.order };
-    console.log({ sort });
+    // console.log({ sort });
     setSort(sort);
   }
 
@@ -413,7 +413,7 @@ function ProductGrid({ products }) {
           <div className="mx-auto max-w-2xl px-4 py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
             <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
               {products.length > 0 ? products.map((product) => (
-                <Link key={product.id} to="/product-detail">
+                <Link key={product.id} to={`/product-detail/${product.id}`}>
                   <div key={product.id} className="group relative p-2 border-solid border-2 border-gray-300">
                     <img
                       alt={product.imageAlt}

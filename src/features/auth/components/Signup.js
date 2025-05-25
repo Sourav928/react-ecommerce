@@ -1,18 +1,26 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useForm } from "react-hook-form";
+
 import {
-  increment,
-  incrementAsync,
-  selectCount,
+  selectLoggedInUser, createUserAsync
 } from '../authSlice';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 
 export default function Signup() {
-  const count = useSelector(selectCount);
   const dispatch = useDispatch();
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
+  const user = useSelector(selectLoggedInUser);
+  console.log(errors);
 
   return (
     <>
+      {user && <Navigate to='/' replace={true} ></Navigate>}
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
@@ -21,12 +29,15 @@ export default function Signup() {
             className="mx-auto h-10 w-auto"
           />
           <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
-           Create a new Account
+            Create a new Account
           </h2>
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form action="#" method="POST" className="space-y-6">
+          <form noValidate className="space-y-6" onSubmit={handleSubmit((data) => { 
+            dispatch(createUserAsync({email:data.email,password:data.password}))
+            console.log(data); 
+            })}>
             <div>
               <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
                 Email address
@@ -34,12 +45,16 @@ export default function Signup() {
               <div className="mt-2">
                 <input
                   id="email"
-                  name="email"
+                  {...register("email", { 
+                    required: "email is required.",
+                    pattern: { 
+                      value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/gi, 
+                      message: "email not valid" }
+                  })}
                   type="email"
-                  required
-                  autoComplete="email"
                   className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
+                {errors.email && <p className='text-red-500' >{errors?.email?.message}</p>}
               </div>
             </div>
 
@@ -52,12 +67,20 @@ export default function Signup() {
               <div className="mt-2">
                 <input
                   id="password"
-                  name="password"
+                  {...register("password", { 
+                    required: "password is required",
+                    pattern: { 
+                      value: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm, 
+                      message: `
+                        - at least 8 characters\n
+- must contain at least 1 uppercase letter\n, 1 lowercase letter\n, and 1 number
+- Can contain special characters
+                    `}
+                  })}
                   type="password"
-                  required
-                  autoComplete="current-password"
                   className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
+                {errors.password && <p className='text-red-500' >{errors?.password?.message}</p>}
               </div>
             </div>
 
@@ -70,11 +93,14 @@ export default function Signup() {
               <div className="mt-2">
                 <input
                   id="confirm-password"
-                  name="confirm-password"
+                  {...register("confirmPassword", {
+                     required: "confirm password is required",
+                  validate: (value, formValues)=>value == formValues.password || "password not matched."
+                   })}
                   type="password"
-                  required
                   className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
+                {errors.confirmPassword && <p className='text-red-500' >{errors?.confirmPassword?.message}</p>}
               </div>
             </div>
 
