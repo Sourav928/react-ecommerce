@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Essence Mascara Lash Princess",
       "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
       "category": "beauty",
@@ -61,7 +61,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Eyeshadow Palette with Mirror",
       "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
       "category": "beauty",
@@ -121,7 +121,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Powder Canister",
       "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
       "category": "beauty",
@@ -181,7 +181,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Red Lipstick",
       "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
       "category": "beauty",
@@ -241,7 +241,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Red Nail Polish",
       "description": "The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.",
       "category": "beauty",
@@ -301,7 +301,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Calvin Klein CK One",
       "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
       "category": "fragrances",
@@ -363,7 +363,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Chanel Coco Noir Eau De",
       "description": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
       "category": "fragrances",
@@ -425,7 +425,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Dior J'adore",
       "description": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
       "category": "fragrances",
@@ -487,7 +487,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Dolce Shine Eau de",
       "description": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
       "category": "fragrances",
@@ -549,7 +549,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Gucci Bloom Eau de",
       "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
       "category": "fragrances",
@@ -611,7 +611,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Annibale Colombo Bed",
       "description": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
       "category": "furniture",
@@ -673,7 +673,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Annibale Colombo Sofa",
       "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
       "category": "furniture",
@@ -735,7 +735,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp"
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Bedside Table African Cherry",
       "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
       "category": "furniture",
@@ -797,7 +797,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp"
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Knoll Saarinen Executive Conference Chair",
       "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
       "category": "furniture",
@@ -859,7 +859,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp"
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Wooden Bathroom Sink With Mirror",
       "description": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
       "category": "furniture",
@@ -921,7 +921,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp"
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Apple",
       "description": "Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
       "category": "groceries",
@@ -979,7 +979,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp"
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Beef Steak",
       "description": "High-quality beef steak, great for grilling or cooking to your preferred level of doneness.",
       "category": "groceries",
@@ -1037,7 +1037,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp"
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Cat Food",
       "description": "Nutritious cat food formulated to meet the dietary needs of your feline friend.",
       "category": "groceries",
@@ -1096,7 +1096,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp"
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Chicken Meat",
       "description": "Fresh and tender chicken meat, suitable for various culinary preparations.",
       "category": "groceries",
@@ -1155,7 +1155,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp"
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Cooking Oil",
       "description": "Versatile cooking oil suitable for frying, sautéing, and various culinary applications.",
       "category": "groceries",
@@ -1213,7 +1213,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp"
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "Cucumber",
       "description": "Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.",
       "category": "groceries",
@@ -1271,7 +1271,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp"
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "Dog Food",
       "description": "Specially formulated dog food designed to provide essential nutrients for your canine companion.",
       "category": "groceries",
@@ -1330,7 +1330,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp"
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "Eggs",
       "description": "Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.",
       "category": "groceries",
@@ -1388,7 +1388,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp"
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Fish Steak",
       "description": "Quality fish steak, suitable for grilling, baking, or pan-searing.",
       "category": "groceries",
@@ -1446,7 +1446,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp"
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "Green Bell Pepper",
       "description": "Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
       "category": "groceries",
@@ -1504,7 +1504,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp"
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Green Chili Pepper",
       "description": "Spicy green chili pepper, ideal for adding heat to your favorite recipes.",
       "category": "groceries",
@@ -1562,7 +1562,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp"
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Honey Jar",
       "description": "Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.",
       "category": "groceries",
@@ -1620,7 +1620,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp"
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "Ice Cream",
       "description": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
       "category": "groceries",
@@ -1681,7 +1681,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp"
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Juice",
       "description": "Refreshing fruit juice, packed with vitamins and great for staying hydrated.",
       "category": "groceries",
@@ -1739,7 +1739,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.webp"
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "Kiwi",
       "description": "Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
       "category": "groceries",
@@ -1797,7 +1797,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp"
     },
     {
-      "id": 31,
+      "id": "31",
       "title": "Lemon",
       "description": "Zesty and tangy lemons, versatile for cooking, baking, or making refreshing beverages.",
       "category": "groceries",
@@ -1855,7 +1855,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/lemon/thumbnail.webp"
     },
     {
-      "id": 32,
+      "id": "32",
       "title": "Milk",
       "description": "Fresh and nutritious milk, a staple for various recipes and daily consumption.",
       "category": "groceries",
@@ -1913,7 +1913,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/milk/thumbnail.webp"
     },
     {
-      "id": 33,
+      "id": "33",
       "title": "Mulberry",
       "description": "Sweet and juicy mulberries, perfect for snacking or adding to desserts and cereals.",
       "category": "groceries",
@@ -1971,7 +1971,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/mulberry/thumbnail.webp"
     },
     {
-      "id": 34,
+      "id": "34",
       "title": "Nescafe Coffee",
       "description": "Quality coffee from Nescafe, available in various blends for a rich and satisfying cup.",
       "category": "groceries",
@@ -2030,7 +2030,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/thumbnail.webp"
     },
     {
-      "id": 35,
+      "id": "35",
       "title": "Potatoes",
       "description": "Versatile and starchy potatoes, great for roasting, mashing, or as a side dish.",
       "category": "groceries",
@@ -2088,7 +2088,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/potatoes/thumbnail.webp"
     },
     {
-      "id": 36,
+      "id": "36",
       "title": "Protein Powder",
       "description": "Nutrient-packed protein powder, ideal for supplementing your diet with essential proteins.",
       "category": "groceries",
@@ -2146,7 +2146,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/protein-powder/thumbnail.webp"
     },
     {
-      "id": 37,
+      "id": "37",
       "title": "Red Onions",
       "description": "Flavorful and aromatic red onions, perfect for adding depth to your savory dishes.",
       "category": "groceries",
@@ -2204,7 +2204,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/red-onions/thumbnail.webp"
     },
     {
-      "id": 38,
+      "id": "38",
       "title": "Rice",
       "description": "High-quality rice, a staple for various cuisines and a versatile base for many dishes.",
       "category": "groceries",
@@ -2262,7 +2262,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/rice/thumbnail.webp"
     },
     {
-      "id": 39,
+      "id": "39",
       "title": "Soft Drinks",
       "description": "Assorted soft drinks in various flavors, perfect for refreshing beverages.",
       "category": "groceries",
@@ -2320,7 +2320,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/soft-drinks/thumbnail.webp"
     },
     {
-      "id": 40,
+      "id": "40",
       "title": "Strawberry",
       "description": "Sweet and succulent strawberries, great for snacking, desserts, or blending into smoothies.",
       "category": "groceries",
@@ -2378,7 +2378,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/strawberry/thumbnail.webp"
     },
     {
-      "id": 41,
+      "id": "41",
       "title": "Tissue Paper Box",
       "description": "Convenient tissue paper box for everyday use, providing soft and absorbent tissues.",
       "category": "groceries",
@@ -2437,7 +2437,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/tissue-paper-box/thumbnail.webp"
     },
     {
-      "id": 42,
+      "id": "42",
       "title": "Water",
       "description": "Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
       "category": "groceries",
@@ -2495,7 +2495,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp"
     },
     {
-      "id": 43,
+      "id": "43",
       "title": "Decoration Swing",
       "description": "The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elegance and whimsy to any room.",
       "category": "home-decoration",
@@ -2556,7 +2556,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp"
     },
     {
-      "id": 44,
+      "id": "44",
       "title": "Family Tree Photo Frame",
       "description": "The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple photo slots, it tells the story of your loved ones.",
       "category": "home-decoration",
@@ -2615,7 +2615,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp"
     },
     {
-      "id": 45,
+      "id": "45",
       "title": "House Showpiece Plant",
       "description": "The House Showpiece Plant is an artificial plant that brings a touch of nature to your home without the need for maintenance. It adds greenery and style to any space.",
       "category": "home-decoration",
@@ -2676,7 +2676,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp"
     },
     {
-      "id": 46,
+      "id": "46",
       "title": "Plant Pot",
       "description": "The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoor garden, adding a modern touch to your plant display.",
       "category": "home-decoration",
@@ -2738,7 +2738,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp"
     },
     {
-      "id": 47,
+      "id": "47",
       "title": "Table Lamp",
       "description": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
       "category": "home-decoration",
@@ -2797,7 +2797,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp"
     },
     {
-      "id": 48,
+      "id": "48",
       "title": "Bamboo Spatula",
       "description": "The Bamboo Spatula is a versatile kitchen tool made from eco-friendly bamboo. Ideal for flipping, stirring, and serving various dishes.",
       "category": "kitchen-accessories",
@@ -2856,7 +2856,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/bamboo-spatula/thumbnail.webp"
     },
     {
-      "id": 49,
+      "id": "49",
       "title": "Black Aluminium Cup",
       "description": "The Black Aluminium Cup is a stylish and durable cup suitable for both hot and cold beverages. Its sleek black design adds a modern touch to your drinkware collection.",
       "category": "kitchen-accessories",
@@ -2916,7 +2916,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/thumbnail.webp"
     },
     {
-      "id": 50,
+      "id": "50",
       "title": "Black Whisk",
       "description": "The Black Whisk is a kitchen essential for whisking and beating ingredients. Its ergonomic handle and sleek design make it a practical and stylish tool.",
       "category": "kitchen-accessories",
@@ -2975,7 +2975,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-whisk/thumbnail.webp"
     },
     {
-      "id": 51,
+      "id": "51",
       "title": "Boxed Blender",
       "description": "The Boxed Blender is a powerful and compact blender perfect for smoothies, shakes, and more. Its convenient design and multiple functions make it a versatile kitchen appliance.",
       "category": "kitchen-accessories",
@@ -3037,7 +3037,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/thumbnail.webp"
     },
     {
-      "id": 52,
+      "id": "52",
       "title": "Carbon Steel Wok",
       "description": "The Carbon Steel Wok is a versatile cooking pan suitable for stir-frying, sautéing, and deep frying. Its sturdy construction ensures even heat distribution for delicious meals.",
       "category": "kitchen-accessories",
@@ -3096,7 +3096,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/carbon-steel-wok/thumbnail.webp"
     },
     {
-      "id": 53,
+      "id": "53",
       "title": "Chopping Board",
       "description": "The Chopping Board is an essential kitchen accessory for food preparation. Made from durable material, it provides a safe and hygienic surface for cutting and chopping.",
       "category": "kitchen-accessories",
@@ -3155,7 +3155,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/chopping-board/thumbnail.webp"
     },
     {
-      "id": 54,
+      "id": "54",
       "title": "Citrus Squeezer Yellow",
       "description": "The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful touch to your kitchen gadgets.",
       "category": "kitchen-accessories",
@@ -3214,7 +3214,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp"
     },
     {
-      "id": 55,
+      "id": "55",
       "title": "Egg Slicer",
       "description": "The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It's perfect for salads, sandwiches, and other dishes where sliced eggs are desired.",
       "category": "kitchen-accessories",
@@ -3273,7 +3273,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp"
     },
     {
-      "id": 56,
+      "id": "56",
       "title": "Electric Stove",
       "description": "The Electric Stove provides a portable and efficient cooking solution. Ideal for small kitchens or as an additional cooking surface for various culinary needs.",
       "category": "kitchen-accessories",
@@ -3335,7 +3335,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/thumbnail.webp"
     },
     {
-      "id": 57,
+      "id": "57",
       "title": "Fine Mesh Strainer",
       "description": "The Fine Mesh Strainer is a versatile tool for straining liquids and sifting dry ingredients. Its fine mesh ensures efficient filtering for smooth cooking and baking.",
       "category": "kitchen-accessories",
@@ -3394,7 +3394,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/fine-mesh-strainer/thumbnail.webp"
     },
     {
-      "id": 58,
+      "id": "58",
       "title": "Fork",
       "description": "The Fork is a classic utensil for various dining and serving purposes. Its durable and ergonomic design makes it a reliable choice for everyday use.",
       "category": "kitchen-accessories",
@@ -3453,7 +3453,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/fork/thumbnail.webp"
     },
     {
-      "id": 59,
+      "id": "59",
       "title": "Glass",
       "description": "The Glass is a versatile and elegant drinking vessel suitable for a variety of beverages. Its clear design allows you to enjoy the colors and textures of your drinks.",
       "category": "kitchen-accessories",
@@ -3512,7 +3512,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/glass/thumbnail.webp"
     },
     {
-      "id": 60,
+      "id": "60",
       "title": "Grater Black",
       "description": "The Grater in Black is a handy kitchen tool for grating cheese, vegetables, and more. Its sleek design and sharp blades make food preparation efficient and easy.",
       "category": "kitchen-accessories",
@@ -3571,7 +3571,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/grater-black/thumbnail.webp"
     },
     {
-      "id": 61,
+      "id": "61",
       "title": "Hand Blender",
       "description": "The Hand Blender is a versatile kitchen appliance for blending, pureeing, and mixing. Its compact design and powerful motor make it a convenient tool for various recipes.",
       "category": "kitchen-accessories",
@@ -3630,7 +3630,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/hand-blender/thumbnail.webp"
     },
     {
-      "id": 62,
+      "id": "62",
       "title": "Ice Cube Tray",
       "description": "The Ice Cube Tray is a practical accessory for making ice cubes in various shapes. Perfect for keeping your drinks cool and adding a fun element to your beverages.",
       "category": "kitchen-accessories",
@@ -3689,7 +3689,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/ice-cube-tray/thumbnail.webp"
     },
     {
-      "id": 63,
+      "id": "63",
       "title": "Kitchen Sieve",
       "description": "The Kitchen Sieve is a versatile tool for sifting and straining dry and wet ingredients. Its fine mesh design ensures smooth results in your cooking and baking.",
       "category": "kitchen-accessories",
@@ -3748,7 +3748,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp"
     },
     {
-      "id": 64,
+      "id": "64",
       "title": "Knife",
       "description": "The Knife is an essential kitchen tool for chopping, slicing, and dicing. Its sharp blade and ergonomic handle make it a reliable choice for food preparation.",
       "category": "kitchen-accessories",
@@ -3807,7 +3807,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/knife/thumbnail.webp"
     },
     {
-      "id": 65,
+      "id": "65",
       "title": "Lunch Box",
       "description": "The Lunch Box is a convenient and portable container for packing and carrying your meals. With compartments for different foods, it's perfect for on-the-go dining.",
       "category": "kitchen-accessories",
@@ -3866,7 +3866,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/lunch-box/thumbnail.webp"
     },
     {
-      "id": 66,
+      "id": "66",
       "title": "Microwave Oven",
       "description": "The Microwave Oven is a versatile kitchen appliance for quick and efficient cooking, reheating, and defrosting. Its compact size makes it suitable for various kitchen setups.",
       "category": "kitchen-accessories",
@@ -3928,7 +3928,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/microwave-oven/thumbnail.webp"
     },
     {
-      "id": 67,
+      "id": "67",
       "title": "Mug Tree Stand",
       "description": "The Mug Tree Stand is a stylish and space-saving solution for organizing your mugs. Keep your favorite mugs easily accessible and neatly displayed in your kitchen.",
       "category": "kitchen-accessories",
@@ -3988,7 +3988,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/mug-tree-stand/thumbnail.webp"
     },
     {
-      "id": 68,
+      "id": "68",
       "title": "Pan",
       "description": "The Pan is a versatile and essential cookware item for frying, sautéing, and cooking various dishes. Its non-stick coating ensures easy food release and cleanup.",
       "category": "kitchen-accessories",
@@ -4047,7 +4047,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/pan/thumbnail.webp"
     },
     {
-      "id": 69,
+      "id": "69",
       "title": "Plate",
       "description": "The Plate is a classic and essential dishware item for serving meals. Its durable and stylish design makes it suitable for everyday use or special occasions.",
       "category": "kitchen-accessories",
@@ -4106,7 +4106,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/plate/thumbnail.webp"
     },
     {
-      "id": 70,
+      "id": "70",
       "title": "Red Tongs",
       "description": "The Red Tongs are versatile kitchen tongs suitable for various cooking and serving tasks. Their vibrant color adds a pop of excitement to your kitchen utensils.",
       "category": "kitchen-accessories",
@@ -4165,7 +4165,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/red-tongs/thumbnail.webp"
     },
     {
-      "id": 71,
+      "id": "71",
       "title": "Silver Pot With Glass Cap",
       "description": "The Silver Pot with Glass Cap is a stylish and functional cookware item for boiling, simmering, and preparing delicious meals. Its glass cap allows you to monitor cooking progress.",
       "category": "kitchen-accessories",
@@ -4224,7 +4224,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/silver-pot-with-glass-cap/thumbnail.webp"
     },
     {
-      "id": 72,
+      "id": "72",
       "title": "Slotted Turner",
       "description": "The Slotted Turner is a kitchen utensil designed for flipping and turning food items. Its slotted design allows excess liquid to drain, making it ideal for frying and sautéing.",
       "category": "kitchen-accessories",
@@ -4283,7 +4283,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/slotted-turner/thumbnail.webp"
     },
     {
-      "id": 73,
+      "id": "73",
       "title": "Spice Rack",
       "description": "The Spice Rack is a convenient organizer for your spices and seasonings. Keep your kitchen essentials within reach and neatly arranged with this stylish spice rack.",
       "category": "kitchen-accessories",
@@ -4342,7 +4342,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/spice-rack/thumbnail.webp"
     },
     {
-      "id": 74,
+      "id": "74",
       "title": "Spoon",
       "description": "The Spoon is a versatile kitchen utensil for stirring, serving, and tasting. Its ergonomic design and durable construction make it an essential tool for every kitchen.",
       "category": "kitchen-accessories",
@@ -4401,7 +4401,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/spoon/thumbnail.webp"
     },
     {
-      "id": 75,
+      "id": "75",
       "title": "Tray",
       "description": "The Tray is a functional and decorative item for serving snacks, appetizers, or drinks. Its stylish design makes it a versatile accessory for entertaining guests.",
       "category": "kitchen-accessories",
@@ -4460,7 +4460,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/tray/thumbnail.webp"
     },
     {
-      "id": 76,
+      "id": "76",
       "title": "Wooden Rolling Pin",
       "description": "The Wooden Rolling Pin is a classic kitchen tool for rolling out dough for baking. Its smooth surface and sturdy handles make it easy to achieve uniform thickness.",
       "category": "kitchen-accessories",
@@ -4519,7 +4519,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/wooden-rolling-pin/thumbnail.webp"
     },
     {
-      "id": 77,
+      "id": "77",
       "title": "Yellow Peeler",
       "description": "The Yellow Peeler is a handy tool for peeling fruits and vegetables with ease. Its bright yellow color adds a cheerful touch to your kitchen gadgets.",
       "category": "kitchen-accessories",
@@ -4578,7 +4578,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/yellow-peeler/thumbnail.webp"
     },
     {
-      "id": 78,
+      "id": "78",
       "title": "Apple MacBook Pro 14 Inch Space Grey",
       "description": "The MacBook Pro 14 Inch in Space Grey is a powerful and sleek laptop, featuring Apple's M1 Pro chip for exceptional performance and a stunning Retina display.",
       "category": "laptops",
@@ -4640,7 +4640,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/thumbnail.webp"
     },
     {
-      "id": 79,
+      "id": "79",
       "title": "Asus Zenbook Pro Dual Screen Laptop",
       "description": "The Asus Zenbook Pro Dual Screen Laptop is a high-performance device with dual screens, providing productivity and versatility for creative professionals.",
       "category": "laptops",
@@ -4701,7 +4701,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/thumbnail.webp"
     },
     {
-      "id": 80,
+      "id": "80",
       "title": "Huawei Matebook X Pro",
       "description": "The Huawei Matebook X Pro is a slim and stylish laptop with a high-resolution touchscreen display, offering a premium experience for users on the go.",
       "category": "laptops",
@@ -4762,7 +4762,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/thumbnail.webp"
     },
     {
-      "id": 81,
+      "id": "81",
       "title": "Lenovo Yoga 920",
       "description": "The Lenovo Yoga 920 is a 2-in-1 convertible laptop with a flexible hinge, allowing you to use it as a laptop or tablet, offering versatility and portability.",
       "category": "laptops",
@@ -4823,7 +4823,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp"
     },
     {
-      "id": 82,
+      "id": "82",
       "title": "New DELL XPS 13 9300 Laptop",
       "description": "The New DELL XPS 13 9300 Laptop is a compact and powerful device, featuring a virtually borderless InfinityEdge display and high-end performance for various tasks.",
       "category": "laptops",
@@ -4884,7 +4884,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/laptops/new-dell-xps-13-9300-laptop/thumbnail.webp"
     },
     {
-      "id": 83,
+      "id": "83",
       "title": "Blue & Black Check Shirt",
       "description": "The Blue & Black Check Shirt is a stylish and comfortable men's shirt featuring a classic check pattern. Made from high-quality fabric, it's suitable for both casual and semi-formal occasions.",
       "category": "mens-shirts",
@@ -4947,7 +4947,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/thumbnail.webp"
     },
     {
-      "id": 84,
+      "id": "84",
       "title": "Gigabyte Aorus Men Tshirt",
       "description": "The Gigabyte Aorus Men Tshirt is a cool and casual shirt for gaming enthusiasts. With the Aorus logo and sleek design, it's perfect for expressing your gaming style.",
       "category": "mens-shirts",
@@ -5010,7 +5010,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp"
     },
     {
-      "id": 85,
+      "id": "85",
       "title": "Man Plaid Shirt",
       "description": "The Man Plaid Shirt is a timeless and versatile men's shirt with a classic plaid pattern. Its comfortable fit and casual style make it a wardrobe essential for various occasions.",
       "category": "mens-shirts",
@@ -5073,7 +5073,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/thumbnail.webp"
     },
     {
-      "id": 86,
+      "id": "86",
       "title": "Man Short Sleeve Shirt",
       "description": "The Man Short Sleeve Shirt is a breezy and stylish option for warm days. With a comfortable fit and short sleeves, it's perfect for a laid-back yet polished look.",
       "category": "mens-shirts",
@@ -5136,7 +5136,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/thumbnail.webp"
     },
     {
-      "id": 87,
+      "id": "87",
       "title": "Men Check Shirt",
       "description": "The Men Check Shirt is a classic and versatile shirt featuring a stylish check pattern. Suitable for various occasions, it adds a smart and polished touch to your wardrobe.",
       "category": "mens-shirts",
@@ -5199,7 +5199,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/thumbnail.webp"
     },
     {
-      "id": 88,
+      "id": "88",
       "title": "Nike Air Jordan 1 Red And Black",
       "description": "The Nike Air Jordan 1 in Red and Black is an iconic basketball sneaker known for its stylish design and high-performance features, making it a favorite among sneaker enthusiasts and athletes.",
       "category": "mens-shoes",
@@ -5262,7 +5262,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/thumbnail.webp"
     },
     {
-      "id": 89,
+      "id": "89",
       "title": "Nike Baseball Cleats",
       "description": "Nike Baseball Cleats are designed for maximum traction and performance on the baseball field. They provide stability and support for players during games and practices.",
       "category": "mens-shoes",
@@ -5325,7 +5325,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/thumbnail.webp"
     },
     {
-      "id": 90,
+      "id": "90",
       "title": "Puma Future Rider Trainers",
       "description": "The Puma Future Rider Trainers offer a blend of retro style and modern comfort. Perfect for casual wear, these trainers provide a fashionable and comfortable option for everyday use.",
       "category": "mens-shoes",
@@ -5388,7 +5388,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/thumbnail.webp"
     },
     {
-      "id": 91,
+      "id": "91",
       "title": "Sports Sneakers Off White & Red",
       "description": "The Sports Sneakers in Off White and Red combine style and functionality, making them a fashionable choice for sports enthusiasts. The red and off-white color combination adds a bold and energetic touch.",
       "category": "mens-shoes",
@@ -5451,7 +5451,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/thumbnail.webp"
     },
     {
-      "id": 92,
+      "id": "92",
       "title": "Sports Sneakers Off White Red",
       "description": "Another variant of the Sports Sneakers in Off White Red, featuring a unique design. These sneakers offer style and comfort for casual occasions.",
       "category": "mens-shoes",
@@ -5514,7 +5514,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/thumbnail.webp"
     },
     {
-      "id": 93,
+      "id": "93",
       "title": "Brown Leather Belt Watch",
       "description": "The Brown Leather Belt Watch is a stylish timepiece with a classic design. Featuring a genuine leather strap and a sleek dial, it adds a touch of sophistication to your look.",
       "category": "mens-watches",
@@ -5576,7 +5576,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp"
     },
     {
-      "id": 94,
+      "id": "94",
       "title": "Longines Master Collection",
       "description": "The Longines Master Collection is an elegant and refined watch known for its precision and craftsmanship. With a timeless design, it's a symbol of luxury and sophistication.",
       "category": "mens-watches",
@@ -5638,7 +5638,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp"
     },
     {
-      "id": 95,
+      "id": "95",
       "title": "Rolex Cellini Date Black Dial",
       "description": "The Rolex Cellini Date with Black Dial is a classic and prestigious watch. With a black dial and date complication, it exudes sophistication and is a symbol of Rolex's heritage.",
       "category": "mens-watches",
@@ -5700,7 +5700,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-date-black-dial/thumbnail.webp"
     },
     {
-      "id": 96,
+      "id": "96",
       "title": "Rolex Cellini Moonphase",
       "description": "The Rolex Cellini Moonphase is a masterpiece of horology, featuring a moon phase complication and exquisite design. It reflects Rolex's commitment to precision and elegance.",
       "category": "mens-watches",
@@ -5762,7 +5762,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-moonphase/thumbnail.webp"
     },
     {
-      "id": 97,
+      "id": "97",
       "title": "Rolex Datejust",
       "description": "The Rolex Datejust is an iconic and versatile timepiece with a date window. Known for its timeless design and reliability, it's a symbol of Rolex's watchmaking excellence.",
       "category": "mens-watches",
@@ -5824,7 +5824,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp"
     },
     {
-      "id": 98,
+      "id": "98",
       "title": "Rolex Submariner Watch",
       "description": "The Rolex Submariner is a legendary dive watch with a rich history. Known for its durability and water resistance, it's a symbol of adventure and exploration.",
       "category": "mens-watches",
@@ -5886,7 +5886,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-submariner-watch/thumbnail.webp"
     },
     {
-      "id": 99,
+      "id": "99",
       "title": "Amazon Echo Plus",
       "description": "The Amazon Echo Plus is a smart speaker with built-in Alexa voice control. It features premium sound quality and serves as a hub for controlling smart home devices.",
       "category": "mobile-accessories",
@@ -5947,7 +5947,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp"
     },
     {
-      "id": 100,
+      "id": "100",
       "title": "Apple Airpods",
       "description": "The Apple Airpods offer a seamless wireless audio experience. With easy pairing, high-quality sound, and Siri integration, they are perfect for on-the-go listening.",
       "category": "mobile-accessories",
@@ -6013,214 +6013,256 @@
     {
       "value": "beauty",
       "label": "beauty",
-      "checked": false
+      "checked": false,
+      "id": "f70a"
     },
     {
       "value": "fragrances",
       "label": "fragrances",
-      "checked": false
+      "checked": false,
+      "id": "0249"
     },
     {
       "value": "furniture",
       "label": "furniture",
-      "checked": false
+      "checked": false,
+      "id": "ea9e"
     },
     {
       "value": "groceries",
       "label": "groceries",
-      "checked": false
+      "checked": false,
+      "id": "08e3"
     },
     {
       "value": "home-decoration",
       "label": "home-decoration",
-      "checked": false
+      "checked": false,
+      "id": "c887"
     },
     {
       "value": "kitchen-accessories",
       "label": "kitchen-accessories",
-      "checked": false
+      "checked": false,
+      "id": "ec23"
     },
     {
       "value": "laptops",
       "label": "laptops",
-      "checked": false
+      "checked": false,
+      "id": "08c4"
     },
     {
       "value": "mens-shirts",
       "label": "mens-shirts",
-      "checked": false
+      "checked": false,
+      "id": "9be1"
     },
     {
       "value": "mens-shoes",
       "label": "mens-shoes",
-      "checked": false
+      "checked": false,
+      "id": "2e47"
     },
     {
       "value": "mens-watches",
       "label": "mens-watches",
-      "checked": false
+      "checked": false,
+      "id": "f97f"
     },
     {
       "value": "mobile-accessories",
       "label": "mobile-accessories",
-      "checked": false
+      "checked": false,
+      "id": "ee7c"
     }
   ],
   "brands": [
     {
       "value": "essence",
       "label": "Essence",
-      "checked": false
+      "checked": false,
+      "id": "514a"
     },
     {
       "value": "glamour-beauty",
       "label": "Glamour Beauty",
-      "checked": false
+      "checked": false,
+      "id": "d3b0"
     },
     {
       "value": "velvet-touch",
       "label": "Velvet Touch",
-      "checked": false
+      "checked": false,
+      "id": "36a9"
     },
     {
       "value": "chic-cosmetics",
       "label": "Chic Cosmetics",
-      "checked": false
+      "checked": false,
+      "id": "dff9"
     },
     {
       "value": "nail-couture",
       "label": "Nail Couture",
-      "checked": false
+      "checked": false,
+      "id": "f99d"
     },
     {
       "value": "calvin-klein",
       "label": "Calvin Klein",
-      "checked": false
+      "checked": false,
+      "id": "9d5d"
     },
     {
       "value": "chanel",
       "label": "Chanel",
-      "checked": false
+      "checked": false,
+      "id": "af1d"
     },
     {
       "value": "dior",
       "label": "Dior",
-      "checked": false
+      "checked": false,
+      "id": "cde4"
     },
     {
       "value": "dolce-&-gabbana",
       "label": "Dolce & Gabbana",
-      "checked": false
+      "checked": false,
+      "id": "4440"
     },
     {
       "value": "gucci",
       "label": "Gucci",
-      "checked": false
+      "checked": false,
+      "id": "4b09"
     },
     {
       "value": "annibale-colombo",
       "label": "Annibale Colombo",
-      "checked": false
+      "checked": false,
+      "id": "3575"
     },
     {
       "value": "furniture-co",
       "label": "Furniture Co.",
-      "checked": false
+      "checked": false,
+      "id": "0b6d"
     },
     {
       "value": "knoll",
       "label": "Knoll",
-      "checked": false
+      "checked": false,
+      "id": "7154"
     },
     {
       "value": "bath-trends",
       "label": "Bath Trends",
-      "checked": false
+      "checked": false,
+      "id": "c6c3"
     },
     {
       "value": "apple",
       "label": "Apple",
-      "checked": false
+      "checked": false,
+      "id": "c75b"
     },
     {
       "value": "asus",
       "label": "Asus",
-      "checked": false
+      "checked": false,
+      "id": "6f9d"
     },
     {
       "value": "huawei",
       "label": "Huawei",
-      "checked": false
+      "checked": false,
+      "id": "a50d"
     },
     {
       "value": "lenovo",
       "label": "Lenovo",
-      "checked": false
+      "checked": false,
+      "id": "fb14"
     },
     {
       "value": "dell",
       "label": "Dell",
-      "checked": false
+      "checked": false,
+      "id": "8ea4"
     },
     {
       "value": "fashion-trends",
       "label": "Fashion Trends",
-      "checked": false
+      "checked": false,
+      "id": "d7cd"
     },
     {
       "value": "gigabyte",
       "label": "Gigabyte",
-      "checked": false
+      "checked": false,
+      "id": "5d06"
     },
     {
       "value": "classic-wear",
       "label": "Classic Wear",
-      "checked": false
+      "checked": false,
+      "id": "578d"
     },
     {
       "value": "casual-comfort",
       "label": "Casual Comfort",
-      "checked": false
+      "checked": false,
+      "id": "a170"
     },
     {
       "value": "urban-chic",
       "label": "Urban Chic",
-      "checked": false
+      "checked": false,
+      "id": "cf02"
     },
     {
       "value": "nike",
       "label": "Nike",
-      "checked": false
+      "checked": false,
+      "id": "84d2"
     },
     {
       "value": "puma",
       "label": "Puma",
-      "checked": false
+      "checked": false,
+      "id": "5f52"
     },
     {
       "value": "off-white",
       "label": "Off White",
-      "checked": false
+      "checked": false,
+      "id": "3cde"
     },
     {
       "value": "fashion-timepieces",
       "label": "Fashion Timepieces",
-      "checked": false
+      "checked": false,
+      "id": "e096"
     },
     {
       "value": "longines",
       "label": "Longines",
-      "checked": false
+      "checked": false,
+      "id": "b97f"
     },
     {
       "value": "rolex",
       "label": "Rolex",
-      "checked": false
+      "checked": false,
+      "id": "49ab"
     },
     {
       "value": "amazon",
       "label": "Amazon",
-      "checked": false
+      "checked": false,
+      "id": "e7dd"
     }
   ],
   "users": [
@@ -6233,6 +6275,72 @@
       "id": "c301",
       "email": "dummy@gmail.com",
       "password": "Dummy@123"
+    }
+  ],
+  "cart": [
+    {
+      "id": "78",
+      "title": "Apple MacBook Pro 14 Inch Space Grey",
+      "description": "The MacBook Pro 14 Inch in Space Grey is a powerful and sleek laptop, featuring Apple's M1 Pro chip for exceptional performance and a stunning Retina display.",
+      "category": "laptops",
+      "price": 1999.99,
+      "discountPercentage": 4.69,
+      "rating": 3.65,
+      "stock": 24,
+      "tags": [
+        "laptops",
+        "apple"
+      ],
+      "brand": "Apple",
+      "sku": "LAP-APP-APP-078",
+      "weight": 9,
+      "dimensions": {
+        "width": 20.03,
+        "height": 9.54,
+        "depth": 14.82
+      },
+      "warrantyInformation": "3 year warranty",
+      "shippingInformation": "Ships in 2 weeks",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Very happy with my purchase!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Hazel Evans",
+          "reviewerEmail": "hazel.evans@x.dummyjson.com"
+        },
+        {
+          "rating": 5,
+          "comment": "Very happy with my purchase!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Christopher West",
+          "reviewerEmail": "christopher.west@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Very satisfied!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Aubrey Garcia",
+          "reviewerEmail": "aubrey.garcia@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "90 days return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2025-04-30T09:41:02.053Z",
+        "updatedAt": "2025-04-30T09:41:02.053Z",
+        "barcode": "5275211560367",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/1.webp",
+        "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/2.webp",
+        "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/3.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/thumbnail.webp",
+      "quantity": 2,
+      "user": "2c09"
     }
   ]
 }
