@@ -11,9 +11,9 @@ export function fetchAllProducts() {
 export function fetchProductById(id) {
   return new Promise(async (resolve) => {
     // TODO: we will not hard-code server url here
-    const response = await fetch(`http://localhost:8080/products/${id}`);
+    const response = await fetch(`http://localhost:8080/products?id=${id}`);
     const data = await response.json();
-    resolve({data})
+    resolve({data:data[0]})
   }
   );
 }
