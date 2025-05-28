@@ -6269,11 +6269,32 @@
     {
       "id": "2c09",
       "email": "tester@gmail.com",
+      "addresses": [
+        {
+          "name": "Sourav",
+          "email": "tester@gmail.com",
+          "phone": "+918169323542",
+          "street": "Building no. 92, Room no. 8, D.N. Wakarikar Marg, Worli.",
+          "city": "Mumbai City",
+          "state": "Maharashtra",
+          "pinCode": "400018"
+        },
+        {
+          "name": "sourav k",
+          "email": "tester@gmail.com",
+          "phone": "+918169323542",
+          "street": "mumbai",
+          "city": "mumbai",
+          "state": "Santa Bárbara",
+          "pinCode": "400018"
+        }
+      ],
       "password": "Tester@123"
     },
     {
       "id": "c301",
       "email": "dummy@gmail.com",
+      "addresses": [],
       "password": "Dummy@123"
     }
   ],
@@ -6342,5 +6363,6 @@
       "quantity": 1,
       "user": "2c09"
     }
-  ]
+  ],
+  "orders":[]
 }

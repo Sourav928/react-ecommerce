@@ -57,7 +57,7 @@ function ProductDetail() {
     useEffect(() => {
         dispatch(fetchProductsByIdAsync(params.id))
     }, [dispatch, params.id])
-    console.log(product);
+    // console.log(product);
 
     return <div>
         <div className="bg-white">

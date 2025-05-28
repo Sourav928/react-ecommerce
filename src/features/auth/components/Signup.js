@@ -16,7 +16,7 @@ export default function Signup() {
     formState: { errors },
   } = useForm()
   const user = useSelector(selectLoggedInUser);
-  console.log(errors);
+  // console.log(errors);
 
   return (
     <>
@@ -35,8 +35,8 @@ export default function Signup() {
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form noValidate className="space-y-6" onSubmit={handleSubmit((data) => { 
-            dispatch(createUserAsync({email:data.email,password:data.password}))
-            console.log(data); 
+            dispatch(createUserAsync({email:data.email,password:data.password,addresses:[]}))
+            // console.log(data); 
             })}>
             <div>
               <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
