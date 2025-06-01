@@ -17,6 +17,7 @@ export default function UserProfile() {
   console.log(user)
   const [selectedEditIndex, setSelectedEditIndex] = useState(-1)
   const [showAddAddressForm, setShowAddAddressForm] = useState(false)
+  //TODO: we will add payment section when we work on backend.
 
   const handleEdit = (addressUpdate, index) => {
     const newUser = { ...user, addresses: [...user.addresses] };
