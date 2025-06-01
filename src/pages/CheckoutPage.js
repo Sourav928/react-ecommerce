@@ -1,58 +1,12 @@
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
 import { Link, Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteItemFromCartAsync, selectItems, updateCartAsync } from '../features/cart/cartSlice';
 import { useForm } from 'react-hook-form';
-import { selectLoggedInUser, updateUserAsync } from '../features/auth/authSlice';
 import { createOrderAsync, selectCurrentOrder } from '../features/order/orderSlice';
-
-const products = [
-    {
-        id: 1,
-        name: 'Throwback Hip Bag',
-        href: '#',
-        color: 'Salmon',
-        price: '$90.00',
-        quantity: 1,
-        imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/shopping-cart-page-04-product-01.jpg',
-        imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
-    },
-    {
-        id: 2,
-        name: 'Medium Stuff Satchel',
-        href: '#',
-        color: 'Blue',
-        price: '$32.00',
-        quantity: 1,
-        imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/shopping-cart-page-04-product-02.jpg',
-        imageAlt:
-            'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
-    },
-    // More products...
-]
-
-const addresses = [
-    {
-        name: 'Leslie Alexander',
-        email: 'leslie.alexander@example.com',
-        phone: '9029384892',
-        state: 'Maharashtra',
-        city: 'Mumbai',
-        pin: '400018',
-        details: "92/8 A King Co.Housing Society Ltd., Worli"
-    },
-    {
-        name: 'Michael Foster',
-        email: 'michael.foster@example.com',
-        phone: '9029384892',
-        state: 'Maharashtra',
-        city: 'Mumbai',
-        pin: '400018',
-        details: "92/8 A King Co.Housing Society Ltd., Worli"
-    }
-]
+import { selectUserInfo, updateUserAsync } from '../features/user/userSlice';
 
 function CheckoutPage() {
     const {
@@ -62,7 +16,7 @@ function CheckoutPage() {
         reset,
         formState: { errors },
     } = useForm();
-    const user = useSelector(selectLoggedInUser);
+    const user = useSelector(selectUserInfo);
     console.log(user)
     const [open, setOpen] = useState(true)
     const dispatch = useDispatch()
