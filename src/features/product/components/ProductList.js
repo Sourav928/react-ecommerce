@@ -99,6 +99,7 @@ export function ProductList() {
   useEffect(() => {
     const pagination = { _page: page, _limit: ITEMS_PER_PAGE };
     dispatch(fetchProductsByFiltersAsync({ filter, sort, pagination }))
+    //TODO: Server will filter the deleted products in case of non-admin screen.
   }, [dispatch, filter, sort, page])
 
   useEffect(() => {

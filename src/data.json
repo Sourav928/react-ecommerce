@@ -58,7 +58,8 @@
       "images": [
         "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"
       ],
-      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+      "deleted": true
     },
     {
       "id": "2",
@@ -302,18 +303,18 @@
     },
     {
       "id": "6",
-      "title": "Calvin Klein CK One",
+      "title": "Calvin Klein CK One Edited",
       "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
       "category": "fragrances",
-      "price": 49.99,
+      "price": 500,
       "discountPercentage": 1.89,
-      "rating": 4.37,
+      "rating": 0,
       "stock": 29,
       "tags": [
         "fragrances",
         "perfumes"
       ],
-      "brand": "Calvin Klein",
+      "brand": "calvin-klein",
       "sku": "FRA-CAL-CAL-006",
       "weight": 7,
       "dimensions": {
