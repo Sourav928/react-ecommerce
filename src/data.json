@@ -6007,6 +6007,23 @@
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/3.webp"
       ],
       "thumbnail": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/thumbnail.webp"
+    },
+    {
+      "id": "5b71",
+      "title": "CK shirt",
+      "description": "This is CK shirt",
+      "brand": "calvin-klein",
+      "category": "mens-shirts",
+      "price": "1200",
+      "discountPercentage": "30",
+      "stock": "100",
+      "thumbnail": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/26325364/2024/1/12/8155b29e-49f0-4304-a817-d078b8a481751705041037399-Calvin-Klein-Jeans-Men-Shirts-6771705041036895-1.jpg",
+      "images": [
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/26325364/2024/1/12/c2a5adf5-3aa3-4d58-9265-d7895e9c12c21705041037353-Calvin-Klein-Jeans-Men-Shirts-6771705041036895-6.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/26325364/2024/1/12/1be44147-0418-4e5a-9732-ed0fab2363a71705041037389-Calvin-Klein-Jeans-Men-Shirts-6771705041036895-2.jpg",
+        "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/26325364/2024/1/12/b252dbf6-4d25-4c0e-a0b9-79650c606a451705041037362-Calvin-Klein-Jeans-Men-Shirts-6771705041036895-5.jpg"
+      ],
+      "rating": 0
     }
   ],
   "categories": [
@@ -6269,6 +6286,7 @@
     {
       "id": "2c09",
       "email": "tester@gmail.com",
+      "role": "user",
       "addresses": [
         {
           "name": "sourav khandekar new",
@@ -6303,8 +6321,16 @@
     {
       "id": "c301",
       "email": "dummy@gmail.com",
+      "role": "user",
       "addresses": [],
       "password": "Dummy@123"
+    },
+    {
+      "id": "12e8",
+      "email": "admin@gmail.com",
+      "password": "Admin@123",
+      "addresses": [],
+      "role": "admin"
     }
   ],
   "cart": [

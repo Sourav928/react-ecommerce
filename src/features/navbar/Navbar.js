@@ -4,6 +4,7 @@ import { Children } from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { selectItems } from '../cart/cartSlice'
+import { selectLoggedInUser } from '../auth/authSlice'
 
 const user = {
   name: 'Tom Cook',
@@ -12,8 +13,9 @@ const user = {
     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
+  { name: 'Dashboard', link: '#', user: true },
+  { name: 'Team', link: '#', user: true },
+  { name: 'Admin', link: '/admin', admin: true },
 ]
 const userNavigation = [
   { name: 'Your Profile', link: '/profile' },
@@ -27,6 +29,7 @@ function classNames(...classes) {
 
 export default function Navbar({ children }) {
   const items = useSelector(selectItems);
+  const user = useSelector(selectLoggedInUser)
 
   return (
     <>
@@ -47,17 +50,17 @@ export default function Navbar({ children }) {
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        aria-current={item.current ? 'page' : undefined}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium',
-                        )}
-                      >
-                        {item.name}
-                      </a>
+                      item[user.role] ? <Link
+                      key={item.name}
+                      to={item.link}
+                      aria-current={item.current ? 'page' : undefined}
+                      className={classNames(
+                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        'rounded-md px-3 py-2 text-sm font-medium',
+                      )}
+                    >
+                      {item.name}
+                    </Link> : null
                     ))}
                   </div>
                 </div>
@@ -121,10 +124,10 @@ export default function Navbar({ children }) {
           <DisclosurePanel className="md:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
               {navigation.map((item) => (
-                <DisclosureButton
+                <Link
                   key={item.name}
                   as="a"
-                  href={item.href}
+                  to={item.link}
                   aria-current={item.current ? 'page' : undefined}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
@@ -132,7 +135,7 @@ export default function Navbar({ children }) {
                   )}
                 >
                   {item.name}
-                </DisclosureButton>
+                </Link>
               ))}
             </div>
             <div className="border-t border-gray-700 pt-4 pb-3">
